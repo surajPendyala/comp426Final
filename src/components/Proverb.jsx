@@ -6,7 +6,7 @@ function Proverb() {
   const [author, setAuthor] = useState("");
 
   useEffect(() => {
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.quotable.io/random")
       .then(res => res.json())
       .then(
         (quote) => {
@@ -17,7 +17,7 @@ function Proverb() {
   },[]);
 
   let getProverb = () => {
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.quotable.io/random")
       .then(res => res.json())
       .then(
         (quote) => {
