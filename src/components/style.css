@@ -1,5 +1,5 @@
   
-.recipeTile {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,14 +7,14 @@
   cursor: pointer;
 }
 
-.recipeTile__img {
+.cardPicture {
   height: 200px;
   width: 200px;
   object-fit: cover;
   border-radius: 4px;
 }
 
-.recipeTile__name {
+.cardName {
   max-width: 200px;
   text-align: center;
   margin: 12px 0px;

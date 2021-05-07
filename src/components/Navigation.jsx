@@ -4,6 +4,7 @@ import { NavLink, withRouter } from "react-router-dom";
 function Navigation () {
   return (
     <div className="navigation">
+      <NavLink class="nav-link" to="/">Home </NavLink>
       <NavLink class="nav-link" to="/recipe"> Recipes </NavLink>
       <NavLink class="nav-link" to="/proverb">Proverb </NavLink>
       <NavLink class="nav-link" to="/bored">Bored </NavLink>

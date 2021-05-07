@@ -28,11 +28,11 @@ function Proverb() {
   }
   return (
     <div >
-         <div >
+        <button className="btn" onClick={getProverb}>Generate New Proverb</button>
+         <div className = "backgroundImage">
             <h2>{proverb}</h2>
             <small>-{author}-</small>
          </div><br />
-         <button className="btn" onClick={getProverb}>Generate New Proverb</button>
     </div>
   );
 }

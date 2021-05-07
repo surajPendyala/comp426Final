@@ -35,38 +35,14 @@ const Snake = () => {
     };
 
     const levelUp = (snake) => {
-        if (snake >= 4 && snake <= 5)
-            setSpeed(185);
-        if (snake === 6)
-            setSpeed(170);
-        if (snake === 7)
-            setSpeed(160);
-        if (snake === 8)
-            setSpeed(150);
-        if (snake === 9)
-            setSpeed(140);
-        if (snake === 10)
-            setSpeed(130);
-        if (snake === 11)
-            setSpeed(120);
-        if (snake > 11 && snake <= 13)
-            setSpeed(110);
-        if (snake > 13 && snake <= 15)
-            setSpeed(105);
-        if (snake > 15 && snake <= 17)
-            setSpeed(100);
-        if (snake > 17 && snake <= 19)
+        if (snake >= 4 && snake <= 20)
             setSpeed(95);
-        if (snake > 19 && snake <= 21)
-            setSpeed(85);
-        if (snake > 21 && snake <= 23)
-            setSpeed(80);
-        if (snake > 23 && snake <= 25)
-            setSpeed(70);
+        if (snake > 20 && snake <= 25)
+            setSpeed(90);
         if (snake > 25 && snake <= 27)
-            setSpeed(60);
+            setSpeed(70);
         if (snake > 27 )
-            setSpeed(50);
+            setSpeed(60);
     }
 
     const endGame = () => {
@@ -144,7 +120,7 @@ const Snake = () => {
                 <Score score={snake.length - 2} />
                 <div role="button" tabIndex="0" onKeyDown={e => moveSnake(e)}>
                     <canvas
-                        style={{border: "5px solid #9575cd"}}
+                        style={{border: "3px solid black"}}
                         ref={canvasRef}
                         width={`${CANVAS_SIZE[0]}px`}
                         height={`${CANVAS_SIZE[1]}px`}
@@ -158,3 +134,8 @@ const Snake = () => {
 };
 
 export default Snake;
+
+
+
+
+// Snake Game Based on: https://www.mariokandut.com/create-classic-snake-game-in-react-with-typescript-part-1/

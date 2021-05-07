@@ -25,10 +25,10 @@ function Bored() {
   }
   return (
     <div >
-         <div >
+        <button className="btn" onClick={getActivity}>Generate New Activity</button>
+         <div className = "plane">
             <h2>{activity}</h2>
          </div><br />
-         <button className="btn" onClick={getActivity}>Generate New Activity</button>
     </div>
   );
 }

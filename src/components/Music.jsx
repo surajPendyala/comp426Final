@@ -25,10 +25,10 @@ function Music() {
   }
   return (
     <div >
-         <div >
+        <button className="btn" onClick={getGenre}>Generate New Genre</button>
+         <div className = "music">
             <h2>{music}</h2>
          </div><br />
-         <button className="btn" onClick={getGenre}>Generate New Genre</button>
     </div>
   );
 }

@@ -7,7 +7,7 @@ const SNAKE_START = [
 ];
 const FOOD_START = [8, 3];
 const SCALE = 40;
-const SPEED = 200;
+const SPEED = 100;
 const DIRECTIONS = {
     40: [0, 1], // down
     39: [1, 0], // right
