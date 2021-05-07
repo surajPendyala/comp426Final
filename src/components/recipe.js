@@ -1,9 +1,8 @@
 import React from "react";
-import {useEffect} from "react";
 import "./style.css";
 import { v4 as uuidv4 } from "uuid";
 
-export default function RecipeTile({ recipe }) {
+export default function recipeProfile({ recipe }) {
   return (
     recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null && (
       <div

@@ -5,7 +5,7 @@ function Bored() {
   const [activity, setActivity] = useState("");
 
   useEffect(() => {
-    fetch("http://www.boredapi.com/api/activity/")
+    fetch("https://www.boredapi.com/api/activity/")
       .then(res => res.json())
       .then(
         (activity) => {
@@ -15,7 +15,7 @@ function Bored() {
   },[]);
 
   let getActivity = () => {
-    fetch("http://www.boredapi.com/api/activity/")
+    fetch("https://www.boredapi.com/api/activity/")
       .then(res => res.json())
       .then(
         (activity) => {

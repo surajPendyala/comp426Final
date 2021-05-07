@@ -38,7 +38,26 @@
     color: #02aff0;
     cursor: pointer;
   }
+
+  .popout-container {
+    border-radius: 5px;
+    margin: auto;
+    width: 59%;
+    position: relative;
+    display: none;
+    z-index: 10;
+    transform: translate(-132px, -40px);
+  }
   
+  #autocomplete-selection {
+    background:#423b37;
+    opacity: .5;
+    color: white;
+    cursor: pointer;
+    width: 99%;
+    border: thin solid white;
+    padding: 5px;
+  }
   .recipes {
     margin-top: 24px;
     display: grid;
